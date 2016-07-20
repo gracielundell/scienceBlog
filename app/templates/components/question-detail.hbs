@@ -1,0 +1,17 @@
+<h2>"{{question.title}}"</h2>
+
+<div class="questionDetail">
+  Asked By: {{question.author}}<br><br>
+  Further Considerations: <br>
+  {{question.notes}}
+
+
+  <br><br>
+  <!-- comments -->
+  <h3>Answers:</h3>
+  <ul>
+    {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+    {{/each}}
+  </ul>
+</div>

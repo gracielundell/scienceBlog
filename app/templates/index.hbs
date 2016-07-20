@@ -1,0 +1,19 @@
+<!-- html that is displayed on the pg, using hbs to call new events/functionalities -->
+<div class="homePage">
+  <div class="header">
+    <h2>Posted Queries</h2> <br>
+    <i class="fa fa-star"></i> Popular
+  </div>
+
+  <ul class="indexQuestions">
+    <!-- list questions -->
+    {{#each model as |question|}}
+    {{question-tile question=question edit="edit"}}
+    {{/each}}
+  </ul>
+
+  <div class="newQuestion">
+    <!-- add a new quetion -->
+    {{new-question save2="save3" question=model}}
+  </div>
+</div>

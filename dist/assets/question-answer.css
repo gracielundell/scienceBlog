@@ -1,0 +1,126 @@
+nav {
+  background-image: url("https://static.pexels.com/photos/2159/flight-sky-earth-space.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  text-align: center; }
+
+.homeLink a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px; }
+  .homeLink a:hover {
+    letter-spacing: 7px; }
+
+.title h1 {
+  font-size: 70px;
+  font-weight: lighter;
+  color: white;
+  align-items: center; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+button {
+  border: 2px solid black;
+  border-radius: 3px;
+  background: white;
+  letter-spacing: 3px;
+  margin: 0 10px; }
+  button:hover {
+    color: darkturquoise;
+    cursor: pointer;
+    border: 2px solid darkturquoise;
+    border-radius: 3px; }
+
+textarea {
+  width: 300px;
+  height: 100px;
+  background: #eee;
+  border: 1px solid #eee; }
+
+input {
+  background: #eee;
+  border: 1px solid #eee;
+  height: 20px; }
+
+a:hover {
+  color: DarkTurquoise; }
+
+.homePage {
+  width: 100%; }
+
+.header {
+  text-align: center; }
+
+h2 {
+  text-align: center; }
+
+.indexQuestions {
+  padding-left: 10%; }
+  .indexQuestions a {
+    font-size: 20px;
+    text-decoration: none; }
+
+ul li {
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 80%; }
+
+.newQuestion {
+  text-align: center; }
+  .newQuestion button {
+    font-size: 20px;
+    padding: 20px 60px;
+    color: white;
+    background-image: url("https://static.pexels.com/photos/2156/sky-earth-space-working.jpg");
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 20px; }
+    .newQuestion button:hover {
+      border: 2px solid DarkTurquoise;
+      color: DarkTurquoise;
+      border-radius: 3px;
+      padding: 18px 58px; }
+
+.questionDetail {
+  width: 80%;
+  margin: 0 auto; }
+  .questionDetail ul li {
+    width: 100%; }
+  .questionDetail h3, .questionDetail h4 {
+    margin: 0px; }
+
+.answerBtn {
+  text-align: center; }
+  .answerBtn button {
+    font-size: 20px;
+    padding: 20px 60px;
+    color: white;
+    background-image: url("https://static.pexels.com/photos/2166/flight-sky-earth-space.jpg");
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 20px; }
+    .answerBtn button:hover {
+      border: 2px solid DarkTurquoise;
+      color: DarkTurquoise;
+      border-radius: 2px solid DarkTurquoise;
+      padding: 18px 58px; }
+
+/*# sourceMappingURL=question-answer.css.map */
