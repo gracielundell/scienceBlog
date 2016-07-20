@@ -1,0 +1,1 @@
+/Users/gracielundell/CSprojects/epicodus-projects/js-code-reviews/scienceBlog/tmp/funnel-input_base_path-fAjXaYXz.tmp/0/components/new-question.js
