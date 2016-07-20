@@ -6,6 +6,7 @@ define('question-answer/router', ['exports', 'ember', 'question-answer/config/en
 
   Router.map(function () {
     this.route('question', { path: '/question/:question_id' });
+    this.route('admin');
   });
 
   exports['default'] = Router;
