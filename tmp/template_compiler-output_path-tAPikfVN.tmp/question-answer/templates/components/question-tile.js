@@ -93,7 +93,7 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el1, el2);
       var el2 = dom.createTextNode("    ");
       dom.appendChild(el1, el2);
-      var el2 = dom.createComment("");
+      var el2 = dom.createComment(" {{update-question question=question edit=\"edit\"}} ");
       dom.appendChild(el1, el2);
       var el2 = dom.createTextNode("\n");
       dom.appendChild(el1, el2);
@@ -104,16 +104,14 @@ export default Ember.HTMLBars.template((function() {
     },
     buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
       var element0 = dom.childAt(fragment, [2]);
-      var morphs = new Array(3);
+      var morphs = new Array(2);
       morphs[0] = dom.createMorphAt(element0,1,1);
       morphs[1] = dom.createMorphAt(element0,3,3);
-      morphs[2] = dom.createMorphAt(element0,5,5);
       return morphs;
     },
     statements: [
       ["inline","question-popularity",[["get","question",["loc",[null,[4,26],[4,34]]]]],[],["loc",[null,[4,4],[4,36]]]],
-      ["block","link-to",["question",["get","question.id",["loc",[null,[5,26],[5,37]]]]],[],0,null,["loc",[null,[5,4],[7,16]]]],
-      ["inline","update-question",[],["question",["subexpr","@mut",[["get","question",["loc",[null,[8,31],[8,39]]]]],[],[]],"edit","edit"],["loc",[null,[8,4],[8,53]]]]
+      ["block","link-to",["question",["get","question.id",["loc",[null,[5,26],[5,37]]]]],[],0,null,["loc",[null,[5,4],[7,16]]]]
     ],
     locals: [],
     templates: [child0]
