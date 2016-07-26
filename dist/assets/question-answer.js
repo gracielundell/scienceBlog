@@ -941,7 +941,11 @@ define('question-answer/router', ['exports', 'ember', 'question-answer/config/en
   exports['default'] = Router;
 });
 define('question-answer/routes/admin', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Route.extend({});
+  exports['default'] = _ember['default'].Route.extend({
+    model: function model() {
+      return this.store.findAll('question');
+    }
+  });
 });
 define('question-answer/routes/index', ['exports', 'ember'], function (exports, _ember) {
   exports['default'] = _ember['default'].Route.extend({
@@ -1018,11 +1022,11 @@ define("question-answer/templates/admin", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 3,
+              "line": 2,
               "column": 2
             },
             "end": {
-              "line": 5,
+              "line": 4,
               "column": 2
             }
           },
@@ -1047,17 +1051,14 @@ define("question-answer/templates/admin", ["exports"], function (exports) {
           morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
           return morphs;
         },
-        statements: [["inline", "admin-tile", [], ["post", ["subexpr", "@mut", [["get", "post", ["loc", [null, [4, 22], [4, 26]]]]], [], []], "update", "update", "destroyPost", "destroyPost"], ["loc", [null, [4, 4], [4, 70]]]]],
+        statements: [["inline", "admin-tile", [], ["post", ["subexpr", "@mut", [["get", "post", ["loc", [null, [3, 22], [3, 26]]]]], [], []], "update", "update", "destroyPost", "destroyPost"], ["loc", [null, [3, 4], [3, 70]]]]],
         locals: ["post"],
         templates: []
       };
     })();
     return {
       meta: {
-        "fragmentReason": {
-          "name": "missing-wrapper",
-          "problems": ["wrong-type", "multiple-nodes"]
-        },
+        "fragmentReason": false,
         "revision": "Ember@2.4.3",
         "loc": {
           "source": null,
@@ -1066,7 +1067,7 @@ define("question-answer/templates/admin", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 7,
+            "line": 6,
             "column": 0
           }
         },
@@ -1078,8 +1079,6 @@ define("question-answer/templates/admin", ["exports"], function (exports) {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("hey i'm the admin page!\n");
-        dom.appendChild(el0, el1);
         var el1 = dom.createElement("ul");
         var el2 = dom.createTextNode("\n");
         dom.appendChild(el1, el2);
@@ -1092,10 +1091,10 @@ define("question-answer/templates/admin", ["exports"], function (exports) {
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var morphs = new Array(1);
-        morphs[0] = dom.createMorphAt(dom.childAt(fragment, [1]), 1, 1);
+        morphs[0] = dom.createMorphAt(dom.childAt(fragment, [0]), 1, 1);
         return morphs;
       },
-      statements: [["block", "each", [["get", "model", ["loc", [null, [3, 10], [3, 15]]]]], [], 0, null, ["loc", [null, [3, 2], [5, 11]]]]],
+      statements: [["block", "each", [["get", "model", ["loc", [null, [2, 10], [2, 15]]]]], [], 0, null, ["loc", [null, [2, 2], [4, 11]]]]],
       locals: [],
       templates: [child0]
     };
@@ -1265,11 +1264,11 @@ define("question-answer/templates/components/admin-tile", ["exports"], function 
           "loc": {
             "source": null,
             "start": {
-              "line": 4,
+              "line": 2,
               "column": 4
             },
             "end": {
-              "line": 6,
+              "line": 4,
               "column": 4
             }
           },
@@ -1299,17 +1298,14 @@ define("question-answer/templates/components/admin-tile", ["exports"], function 
           morphs[1] = dom.createMorphAt(fragment, 3, 3, contextualElement);
           return morphs;
         },
-        statements: [["content", "question.author", ["loc", [null, [5, 6], [5, 25]]]], ["content", "question.title", ["loc", [null, [5, 32], [5, 50]]]]],
+        statements: [["content", "question.author", ["loc", [null, [3, 6], [3, 25]]]], ["content", "question.title", ["loc", [null, [3, 32], [3, 50]]]]],
         locals: [],
         templates: []
       };
     })();
     return {
       meta: {
-        "fragmentReason": {
-          "name": "missing-wrapper",
-          "problems": ["wrong-type", "multiple-nodes"]
-        },
+        "fragmentReason": false,
         "revision": "Ember@2.4.3",
         "loc": {
           "source": null,
@@ -1318,7 +1314,7 @@ define("question-answer/templates/components/admin-tile", ["exports"], function 
             "column": 0
           },
           "end": {
-            "line": 9,
+            "line": 7,
             "column": 0
           }
         },
@@ -1330,8 +1326,6 @@ define("question-answer/templates/components/admin-tile", ["exports"], function 
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("i'm an admin tile\n\n");
-        dom.appendChild(el0, el1);
         var el1 = dom.createElement("li");
         var el2 = dom.createTextNode("\n");
         dom.appendChild(el1, el2);
@@ -1349,13 +1343,13 @@ define("question-answer/templates/components/admin-tile", ["exports"], function 
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [1]);
+        var element0 = dom.childAt(fragment, [0]);
         var morphs = new Array(2);
         morphs[0] = dom.createMorphAt(element0, 1, 1);
         morphs[1] = dom.createMorphAt(element0, 3, 3);
         return morphs;
       },
-      statements: [["block", "link-to", ["question", ["get", "question.id", ["loc", [null, [4, 26], [4, 37]]]]], [], 0, null, ["loc", [null, [4, 4], [6, 16]]]], ["inline", "update-question", [], ["question", ["subexpr", "@mut", [["get", "question", ["loc", [null, [7, 31], [7, 39]]]]], [], []], "edit", "edit"], ["loc", [null, [7, 4], [7, 53]]]]],
+      statements: [["block", "link-to", ["question", ["get", "question.id", ["loc", [null, [2, 26], [2, 37]]]]], [], 0, null, ["loc", [null, [2, 4], [4, 16]]]], ["inline", "update-question", [], ["question", ["subexpr", "@mut", [["get", "question", ["loc", [null, [5, 31], [5, 39]]]]], [], []], "edit", "edit"], ["loc", [null, [5, 4], [5, 53]]]]],
       locals: [],
       templates: [child0]
     };
@@ -4538,7 +4532,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("question-answer/app")["default"].create({"name":"question-answer","version":"0.0.0+09246b61"});
+  require("question-answer/app")["default"].create({"name":"question-answer","version":"0.0.0+"});
 }
 
 /* jshint ignore:end */

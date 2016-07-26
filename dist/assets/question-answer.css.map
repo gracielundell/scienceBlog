@@ -2,11 +2,11 @@
 	"version": 3,
 	"file": "question-answer.css",
 	"sources": [
-		"../../sass_compiler-input_base_path-bfsnT8kv.tmp/0/app/styles/app.scss",
-		"../../sass_compiler-input_base_path-bfsnT8kv.tmp/0/app/styles/_nav.scss",
-		"../../sass_compiler-input_base_path-bfsnT8kv.tmp/0/app/styles/_base.scss",
-		"../../sass_compiler-input_base_path-bfsnT8kv.tmp/0/app/styles/_homepage.scss",
-		"../../sass_compiler-input_base_path-bfsnT8kv.tmp/0/app/styles/_questionDetail.scss"
+		"../../sass_compiler-input_base_path-wyKwDYid.tmp/0/app/styles/app.scss",
+		"../../sass_compiler-input_base_path-wyKwDYid.tmp/0/app/styles/_nav.scss",
+		"../../sass_compiler-input_base_path-wyKwDYid.tmp/0/app/styles/_base.scss",
+		"../../sass_compiler-input_base_path-wyKwDYid.tmp/0/app/styles/_homepage.scss",
+		"../../sass_compiler-input_base_path-wyKwDYid.tmp/0/app/styles/_questionDetail.scss"
 	],
 	"sourcesContent": [
 		"@import \"nav\";\n@import \"base\";\n@import \"homepage\";\n@import \"questionDetail\";\n",
