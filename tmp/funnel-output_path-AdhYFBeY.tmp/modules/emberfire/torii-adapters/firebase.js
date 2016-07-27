@@ -1,0 +1,1 @@
+/Users/gracielundell/CSprojects/epicodus-projects/js-code-reviews/scienceBlog/tmp/funnel-input_base_path-p3xOdw97.tmp/0/torii-adapters/firebase.js

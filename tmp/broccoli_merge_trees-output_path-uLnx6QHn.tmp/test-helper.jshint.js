@@ -1,0 +1,1 @@
+/Users/gracielundell/CSprojects/epicodus-projects/js-code-reviews/scienceBlog/tmp/broccoli_merge_trees-input_base_path-x8jceOi7.tmp/0/test-helper.jshint.js

@@ -1,0 +1,1 @@
+/Users/gracielundell/CSprojects/epicodus-projects/js-code-reviews/scienceBlog/node_modules/ember-cli-qunit/node_modules/ember-qunit/lib/ember-qunit.js

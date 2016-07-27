@@ -1,0 +1,1 @@
+/Users/gracielundell/CSprojects/epicodus-projects/js-code-reviews/scienceBlog/tmp/funnel-input_base_path-5JA5Om89.tmp/0/bower_components/ember-cli-test-loader/test-loader.js

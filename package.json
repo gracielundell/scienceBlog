@@ -44,5 +44,8 @@
   },
   "dependencies": {
     "ember-cli-sass": "^5.3.1"
+  },
+  "ember-addon": {
+    "demoURL": "http://www.gracielundell.com/scienceBlog"
   }
 }
